@@ -24,7 +24,7 @@ function getProductPrice(price) {
     const productPrice = document.getElementById(price + "-price");
     const productPriceValue = parseInt(productPrice.innerText);
     return productPriceValue;
-}
+};
 
 function calculateTotal() {
     // sub-total price....
@@ -38,12 +38,10 @@ function calculateTotal() {
     // final total.....
     const total = parseFloat(subTotal + tax);
 
-
-
     document.getElementById("sub-total-price").innerText = subTotal;
     document.getElementById("tax-total").innerText = tax;
     document.getElementById("Total").innerText = total;
-}
+};
 
 
 
@@ -51,19 +49,19 @@ function calculateTotal() {
 // mobile section plus ................
 document.getElementById("mobile-plus").addEventListener("click", function () {
     allProduct('mobile', true, 1219);
-})
+});
 
 // mobile section minus ................
 document.getElementById("mobile-minus").addEventListener("click", function () {
     allProduct('mobile', false, 1219);
-})
+});
 
 //  cashing section plus.....
 document.getElementById("cashing-plus").addEventListener("click", function () {
     allProduct('cashing', true, 59);
-})
+});
 
 //  cashing section minus.....
 document.getElementById("cashing-minus").addEventListener("click", function () {
     allProduct('cashing', false, 59);
-})
+});
